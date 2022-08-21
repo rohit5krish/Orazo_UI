@@ -19,20 +19,23 @@ class TechnologyBubbleWidget extends StatelessWidget {
       duration: animDuration,
       top: (currentBubble == 'tec-animation')
           ? screenSize.height * 0.4
-          : (currentBubble == 'product-animation')
+          : (currentBubble == 'product-animation' ||
+                  currentBubble == 'food-animation')
               ? screenSize.height * 0.34
               : screenSize.height * 0.25,
       left: (currentBubble == 'technology-animation')
           ? screenSize.width * 0.3
-          : (currentBubble == 'tec-animation')
+          : (currentBubble == 'tec-animation' ||
+                  currentBubble == 'product-animation')
               ? screenSize.width * 0.55
-              : (currentBubble == 'product-animation')
-                  ? screenSize.width * 0.55
+              : (currentBubble == 'food-animation')
+                  ? screenSize.width * 0.58
                   : screenSize.width * 0.43,
       child: CustomBubble(
         bubbleHeight: (currentBubble == 'technology-animation')
             ? screenSize.height * 0.28
-            : (currentBubble == 'tec-animation')
+            : (currentBubble == 'tec-animation' ||
+                    currentBubble == 'food-animation')
                 ? screenSize.height * 0.12
                 : (currentBubble == 'product-animation')
                     ? screenSize.height * 0.14
@@ -41,7 +44,8 @@ class TechnologyBubbleWidget extends StatelessWidget {
             ? screenSize.width * 0.65
             : (currentBubble == 'tec-animation')
                 ? screenSize.width * 0.32
-                : (currentBubble == 'product-animation')
+                : (currentBubble == 'product-animation' ||
+                        currentBubble == 'food-animation')
                     ? screenSize.width * 0.34
                     : screenSize.width * 0.53,
         heroTag: 'technology-animation',

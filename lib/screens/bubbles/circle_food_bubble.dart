@@ -23,18 +23,25 @@ class CircleFoodBubbleWidget extends StatelessWidget {
                 ? screenSize.height * 0.7
                 : (currentBubble == 'product-animation')
                     ? screenSize.height * 0.63
-                    : screenSize.height * 0.65,
+                    : (currentBubble == 'food-animation')
+                        ? screenSize.height * 0.66
+                        : screenSize.height * 0.65,
         left: (currentBubble == 'tec-animation')
             ? screenSize.width * 0.5
             : (currentBubble == 'product-animation')
                 ? screenSize.width * 0.42
-                : screenSize.width * 0.35,
+                : (currentBubble == 'food-animation')
+                    ? screenSize.width * 0.38
+                    : screenSize.width * 0.35,
         child: CustomBubble(
-          bubbleHeight: screenSize.height * 0.1,
-          bubbleWidth: (currentBubble == 'tec-animation')
+          bubbleHeight: (currentBubble == 'food-animation')
+              ? screenSize.height * 0.18
+              : screenSize.height * 0.1,
+          bubbleWidth: (currentBubble == 'tec-animation' ||
+                  currentBubble == 'product-animation')
               ? screenSize.width * 0.25
-              : (currentBubble == 'product-animation')
-                  ? screenSize.width * 0.25
+              : (currentBubble == 'food-animation')
+                  ? screenSize.width * 0.4
                   : screenSize.width * 0.3,
           heroTag: 'food-circle-bubble',
           bubbleShape: CircleShape(),

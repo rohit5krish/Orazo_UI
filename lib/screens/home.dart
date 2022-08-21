@@ -14,12 +14,7 @@ import 'package:orazo_ui/screens/bubbles/small_product_bubble.dart';
 import 'package:orazo_ui/screens/bubbles/tec_bubble.dart';
 import 'package:orazo_ui/screens/bubbles/technology_bubble.dart';
 import 'package:orazo_ui/screens/bubbles/top_small_bubble.dart';
-import 'package:orazo_ui/screens/shapes/circle_shape.dart';
-import 'package:orazo_ui/screens/shapes/custom_shape.dart';
-import 'package:orazo_ui/screens/shapes/irregular_shape.dart';
-import 'package:orazo_ui/screens/shapes/product_shape.dart';
 import 'package:orazo_ui/screens/widgets/continue_button.dart';
-import 'package:orazo_ui/screens/widgets/custom_bubble.dart';
 
 class HomeScreen extends StatelessWidget {
   HomeScreen({Key? key}) : super(key: key);

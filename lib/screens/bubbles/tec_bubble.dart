@@ -21,7 +21,8 @@ class TecBubbleWidget extends StatelessWidget {
             ? screenSize.height * 0.28
             : (currentBubble == 'tec-animation')
                 ? screenSize.height * 0.33
-                : (currentBubble == 'product-animation')
+                : (currentBubble == 'product-animation' ||
+                        currentBubble == 'food-animation')
                     ? screenSize.height * 0.35
                     : screenSize.height * 0.26,
         left: (currentBubble == 'technology-animation')
@@ -36,22 +37,24 @@ class TecBubbleWidget extends StatelessWidget {
               ? screenSize.height * 0.15
               : (currentBubble == 'tec-animation')
                   ? screenSize.height * 0.26
-                  : (currentBubble == 'product-animation')
+                  : (currentBubble == 'product-animation' ||
+                          currentBubble == 'food-animation')
                       ? screenSize.height * 0.13
                       : screenSize.height * 0.16,
-          bubbleWidth: (currentBubble == 'technology-animation')
+          bubbleWidth: (currentBubble == 'technology-animation' ||
+                  currentBubble == 'food-animation' ||
+                  currentBubble == 'product-animation')
               ? screenSize.width * 0.3
               : (currentBubble == 'tec-animation')
                   ? screenSize.width * 0.5
-                  : (currentBubble == 'product-animation')
-                      ? screenSize.width * 0.3
-                      : screenSize.width * 0.32,
+                  : screenSize.width * 0.32,
           heroTag: 'tec-animation',
           bubbleShape: CustomCommonShape(),
           contentText: 'Tec',
           contentStyle: (currentBubble == 'technology-animation')
               ? whiteTxt22
-              : (currentBubble == 'product-animation')
+              : (currentBubble == 'product-animation' ||
+                      currentBubble == 'food-animation')
                   ? whiteTxt22
                   : (currentBubble == 'tec-animation')
                       ? whiteTxt35

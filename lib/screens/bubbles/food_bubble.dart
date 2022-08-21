@@ -21,33 +21,41 @@ class FoodBubbleWidget extends StatelessWidget {
             ? screenSize.height * 0.55
             : (currentBubble == 'tec-animation')
                 ? screenSize.height * 0.58
-                : screenSize.height * 0.48,
+                : (currentBubble == 'food-animation')
+                    ? screenSize.height * 0.46
+                    : screenSize.height * 0.48,
         left: (currentBubble == 'technology-animation')
             ? screenSize.width * 0.4
             : (currentBubble == 'tec-animation')
                 ? screenSize.width * 0.38
-                : screenSize.width * 0.35,
+                : (currentBubble == 'food-animation')
+                    ? screenSize.width * 0.28
+                    : screenSize.width * 0.35,
         child: CustomBubble(
           bubbleHeight: (currentBubble == 'tec-animation')
               ? screenSize.height * 0.12
               : (currentBubble == 'product-animation')
                   ? screenSize.height * 0.14
-                  : screenSize.height * 0.15,
+                  : (currentBubble == 'food-animation')
+                      ? screenSize.height * 0.2
+                      : screenSize.height * 0.15,
           bubbleWidth: (currentBubble == 'tec-animation')
               ? screenSize.width * 0.32
               : (currentBubble == 'product-animation')
                   ? screenSize.width * 0.34
-                  : screenSize.width * 0.3,
+                  : (currentBubble == 'food-animation')
+                      ? screenSize.width * 0.52
+                      : screenSize.width * 0.3,
           heroTag: 'food-animation',
           bubbleShape: CustomCommonShape(),
           contentText: 'Food',
-          contentStyle: (currentBubble == 'technology-animation')
+          contentStyle: (currentBubble == 'technology-animation' ||
+                  currentBubble == 'product-animation' ||
+                  currentBubble == 'tec-animation')
               ? whiteTxt20
-              : (currentBubble == 'product-animation')
-                  ? whiteTxt20
-                  : (currentBubble == 'tec-animation')
-                      ? whiteTxt20
-                      : whiteTxt18,
+              : (currentBubble == 'food-animation')
+                  ? whiteTxt30
+                  : whiteTxt18,
         ));
   }
 }

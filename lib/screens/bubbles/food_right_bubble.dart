@@ -23,7 +23,9 @@ class FoodRightBubbleWidget extends StatelessWidget {
                 ? screenSize.height * 0.6
                 : (currentBubble == 'product-animation')
                     ? screenSize.height * 0.57
-                    : screenSize.height * 0.58,
+                    : (currentBubble == 'food-animation')
+                        ? screenSize.height * 0.64
+                        : screenSize.height * 0.58,
         left: (currentBubble == 'product-animation')
             ? screenSize.width * 0.68
             : screenSize.width * 0.73,

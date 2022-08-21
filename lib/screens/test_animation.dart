@@ -23,11 +23,11 @@ class ProductAnimation extends StatelessWidget {
               child: Stack(
                 children: [
                   Positioned(
-                      top: screenSize.height * 0.15,
-                      left: screenSize.width * 0.18,
+                      top: screenSize.height * 0.23,
+                      left: screenSize.width * 0.22,
                       child: CustomBubble(
-                        bubbleHeight: screenSize.height * 0.22,
-                        bubbleWidth: screenSize.width * 0.6,
+                        bubbleHeight: screenSize.height * 0.15,
+                        bubbleWidth: screenSize.width * 0.4,
                         heroTag: 'product-animation',
                         bubbleShape: ProductShape(),
                         contentText: 'Products',
@@ -35,9 +35,9 @@ class ProductAnimation extends StatelessWidget {
                       )),
                   Positioned(
                     top: screenSize.height * 0.34,
-                    left: screenSize.width * 0.55,
+                    left: screenSize.width * 0.58,
                     child: CustomBubble(
-                      bubbleHeight: screenSize.height * 0.14,
+                      bubbleHeight: screenSize.height * 0.12,
                       bubbleWidth: screenSize.width * 0.34,
                       heroTag: 'technology-animation',
                       bubbleShape: CircleShape(),
@@ -46,28 +46,28 @@ class ProductAnimation extends StatelessWidget {
                     ),
                   ),
                   Positioned(
-                      top: screenSize.height * 0.28,
+                      top: screenSize.height * 0.25,
                       left: screenSize.width * 0.78,
                       child: CustomBubble(
-                        bubbleHeight: screenSize.height * 0.05,
-                        bubbleWidth: screenSize.width * 0.13,
+                        bubbleHeight: screenSize.height * 0.08,
+                        bubbleWidth: screenSize.width * 0.18,
                         heroTag: 'top-small-bubble',
                         bubbleShape: CustomCommonShape(),
                       )),
                   Positioned(
                       top: screenSize.height * 0.35,
-                      left: screenSize.width * 0.04,
+                      left: screenSize.width * 0.02,
                       child: CustomBubble(
                         bubbleHeight: screenSize.height * 0.13,
                         bubbleWidth: screenSize.width * 0.3,
                         heroTag: 'tec-animation',
                         bubbleShape: CustomCommonShape(),
                         contentText: 'Tec',
-                        contentStyle: whiteTxt20,
+                        contentStyle: whiteTxt22,
                       )),
                   Positioned(
                       top: screenSize.height * 0.49,
-                      left: screenSize.width * 0.06,
+                      left: screenSize.width * 0.02,
                       child: CustomBubble(
                         bubbleHeight: screenSize.height * 0.1,
                         bubbleWidth: screenSize.width * 0.3,
@@ -77,7 +77,7 @@ class ProductAnimation extends StatelessWidget {
                         contentStyle: whiteTxt18,
                       )),
                   Positioned(
-                      top: screenSize.height * 0.4,
+                      top: screenSize.height * 0.38,
                       left: screenSize.width * 0.4,
                       child: CustomBubble(
                         bubbleHeight: screenSize.height * 0.06,
@@ -87,27 +87,27 @@ class ProductAnimation extends StatelessWidget {
                       )),
                   Positioned(
                       top: screenSize.height * 0.6,
-                      left: screenSize.width * 0.15,
+                      left: screenSize.width * 0.02,
                       child: CustomBubble(
-                        bubbleHeight: screenSize.height * 0.12,
+                        bubbleHeight: screenSize.height * 0.13,
                         bubbleWidth: screenSize.width * 0.3,
                         heroTag: 'product-big-bubble',
                         bubbleShape: IrregularShape(),
                       )),
                   Positioned(
-                      top: screenSize.height * 0.48,
-                      left: screenSize.width * 0.34,
+                      top: screenSize.height * 0.46,
+                      left: screenSize.width * 0.28,
                       child: CustomBubble(
-                        bubbleHeight: screenSize.height * 0.14,
-                        bubbleWidth: screenSize.width * 0.34,
+                        bubbleHeight: screenSize.height * 0.2,
+                        bubbleWidth: screenSize.width * 0.52,
                         heroTag: 'food-animation',
                         bubbleShape: CustomCommonShape(),
                         contentText: 'Food',
-                        contentStyle: whiteTxt18,
+                        contentStyle: whiteTxt22,
                       )),
                   Positioned(
-                      top: screenSize.height * 0.5,
-                      left: screenSize.width * 0.7,
+                      top: screenSize.height * 0.53,
+                      left: screenSize.width * 0.8,
                       child: CustomBubble(
                         bubbleHeight: screenSize.height * 0.05,
                         bubbleWidth: screenSize.width * 0.15,
@@ -115,17 +115,17 @@ class ProductAnimation extends StatelessWidget {
                         bubbleShape: CustomCommonShape(),
                       )),
                   Positioned(
-                      top: screenSize.height * 0.63,
-                      left: screenSize.width * 0.42,
+                      top: screenSize.height * 0.66,
+                      left: screenSize.width * 0.38,
                       child: CustomBubble(
-                        bubbleHeight: screenSize.height * 0.1,
-                        bubbleWidth: screenSize.width * 0.25,
+                        bubbleHeight: screenSize.height * 0.18,
+                        bubbleWidth: screenSize.width * 0.4,
                         heroTag: 'food-circle-bubble',
                         bubbleShape: CircleShape(),
                       )),
                   Positioned(
-                      top: screenSize.height * 0.57,
-                      left: screenSize.width * 0.68,
+                      top: screenSize.height * 0.64,
+                      left: screenSize.width * 0.73,
                       child: CustomBubble(
                         bubbleHeight: screenSize.height * 0.1,
                         bubbleWidth: screenSize.width * 0.25,

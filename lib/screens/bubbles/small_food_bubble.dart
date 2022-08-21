@@ -21,8 +21,12 @@ class SmallFoodBubbleWidget extends StatelessWidget {
             ? screenSize.height * 0.55
             : (currentBubble == 'tec-animation')
                 ? screenSize.height * 0.54
-                : screenSize.height * 0.5,
-        left: screenSize.width * 0.7,
+                : (currentBubble == 'food-animation')
+                    ? screenSize.height * 0.53
+                    : screenSize.height * 0.5,
+        left: (currentBubble == 'food-animation')
+            ? screenSize.width * 0.8
+            : screenSize.width * 0.7,
         child: CustomBubble(
           bubbleHeight: screenSize.height * 0.05,
           bubbleWidth: screenSize.width * 0.15,

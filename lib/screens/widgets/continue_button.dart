@@ -15,7 +15,7 @@ class ContinueButtonWidget extends StatelessWidget {
       alignment: Alignment.bottomCenter,
       child: ElevatedButton(
           onPressed: () {},
-          child: Text(
+          child: const Text(
             'Continue',
             style: whiteTxt18,
           ),

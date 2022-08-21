@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:orazo_ui/constants/constants.dart';
 
 class CircleShape extends CustomPainter {
   @override

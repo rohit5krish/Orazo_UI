@@ -21,15 +21,21 @@ class TopSmallBubbleWidget extends StatelessWidget {
             ? screenSize.height * 0.34
             : (currentBubble == 'product-animation')
                 ? screenSize.height * 0.28
-                : screenSize.height * 0.15,
-        left: (currentBubble == 'tec-animation')
+                : (currentBubble == 'food-animation')
+                    ? screenSize.height * 0.25
+                    : screenSize.height * 0.15,
+        left: (currentBubble == 'tec-animation' ||
+                currentBubble == 'food-animation' ||
+                currentBubble == 'product-animation')
             ? screenSize.width * 0.78
-            : (currentBubble == 'product-animation')
-                ? screenSize.width * 0.78
-                : screenSize.width * 0.7,
+            : screenSize.width * 0.7,
         child: CustomBubble(
-          bubbleHeight: screenSize.height * 0.05,
-          bubbleWidth: screenSize.width * 0.13,
+          bubbleHeight: currentBubble == 'food-animation'
+              ? screenSize.height * 0.08
+              : screenSize.height * 0.05,
+          bubbleWidth: currentBubble == 'food-animation'
+              ? screenSize.width * 0.18
+              : screenSize.width * 0.13,
           heroTag: 'top-small-bubble',
           bubbleShape: CustomCommonShape(),
         ));

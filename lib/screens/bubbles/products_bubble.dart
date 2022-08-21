@@ -23,7 +23,9 @@ class ProductsBubbleWidget extends StatelessWidget {
                 ? screenSize.height * 0.28
                 : (currentBubble == 'product-animation')
                     ? screenSize.height * 0.15
-                    : screenSize.height * 0.13,
+                    : (currentBubble == 'food-animation')
+                        ? screenSize.height * 0.23
+                        : screenSize.height * 0.13,
         left: (currentBubble == 'technology-animation')
             ? screenSize.width * 0.13
             : (currentBubble == 'tec-animation')
@@ -41,7 +43,9 @@ class ProductsBubbleWidget extends StatelessWidget {
               ? screenSize.width * 0.35
               : (currentBubble == 'product-animation')
                   ? screenSize.width * 0.6
-                  : screenSize.width * 0.45,
+                  : (currentBubble == 'food-animation')
+                      ? screenSize.width * 0.4
+                      : screenSize.width * 0.45,
           heroTag: 'product-animation',
           bubbleShape: ProductShape(),
           contentText: 'Products',

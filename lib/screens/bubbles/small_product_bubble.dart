@@ -26,20 +26,21 @@ class SmallProductBubbleWidget extends StatelessWidget {
                     : screenSize.height * 0.38,
         left: (currentBubble == 'tec-animation')
             ? screenSize.width * 0.5
-            : (currentBubble == 'product-animation')
+            : (currentBubble == 'product-animation' ||
+                    currentBubble == 'food-animation')
                 ? screenSize.width * 0.4
                 : screenSize.width * 0.35,
         child: CustomBubble(
-          bubbleHeight: (currentBubble == 'tec-animation')
+          bubbleHeight: (currentBubble == 'tec-animation' ||
+                  currentBubble == 'food-animation' ||
+                  currentBubble == 'product-animation')
               ? screenSize.height * 0.06
-              : (currentBubble == 'product-animation')
-                  ? screenSize.height * 0.06
-                  : screenSize.height * 0.05,
-          bubbleWidth: (currentBubble == 'tec-animation')
+              : screenSize.height * 0.05,
+          bubbleWidth: (currentBubble == 'tec-animation' ||
+                  currentBubble == 'food-animation' ||
+                  currentBubble == 'product-animation')
               ? screenSize.width * 0.12
-              : (currentBubble == 'product-animation')
-                  ? screenSize.width * 0.12
-                  : screenSize.width * 0.1,
+              : screenSize.width * 0.1,
           heroTag: 'product-bubble',
           bubbleShape: CustomCommonShape(),
         ));

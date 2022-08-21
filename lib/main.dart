@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:orazo_ui/screens/home.dart';
-import 'package:orazo_ui/screens/test_animation.dart';
 
 void main() {
   runApp(const OrazoUI());

@@ -17,12 +17,14 @@ class BottomSmallBubbleWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return AnimatedPositioned(
         duration: animDuration,
-        top: (currentBubble == 'product-animation')
+        top: (currentBubble == 'product-animation' ||
+                currentBubble == 'food-animation')
             ? screenSize.height * 0.74
             : screenSize.height * 0.76,
         left: (currentBubble == 'tec-animation')
             ? screenSize.width * 0.73
-            : (currentBubble == 'product-animation')
+            : (currentBubble == 'product-animation' ||
+                    currentBubble == 'food-animation')
                 ? screenSize.width * 0.07
                 : screenSize.width * 0.1,
         child: CustomBubble(
