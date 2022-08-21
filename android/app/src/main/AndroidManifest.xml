@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.orazo_ui">
    <application
-        android:label="orazo_ui"
+        android:label="Orazo_UI"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

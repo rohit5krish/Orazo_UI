@@ -18,7 +18,7 @@ class SmallProductBubbleWidget extends StatelessWidget {
     return AnimatedPositioned(
         duration: animDuration,
         top: (currentBubble == 'technology-animation')
-            ? screenSize.height * 0.51
+            ? screenSize.height * 0.52
             : (currentBubble == 'tec-animation')
                 ? screenSize.height * 0.51
                 : (currentBubble == 'product-animation')

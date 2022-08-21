@@ -22,7 +22,7 @@ class TechnologyBubbleWidget extends StatelessWidget {
           : (currentBubble == 'product-animation' ||
                   currentBubble == 'food-animation')
               ? screenSize.height * 0.34
-              : screenSize.height * 0.25,
+              : screenSize.height * 0.27,
       left: (currentBubble == 'technology-animation')
           ? screenSize.width * 0.3
           : (currentBubble == 'tec-animation' ||
@@ -39,7 +39,7 @@ class TechnologyBubbleWidget extends StatelessWidget {
                 ? screenSize.height * 0.12
                 : (currentBubble == 'product-animation')
                     ? screenSize.height * 0.14
-                    : screenSize.height * 0.23,
+                    : screenSize.height * 0.2,
         bubbleWidth: (currentBubble == 'technology-animation')
             ? screenSize.width * 0.65
             : (currentBubble == 'tec-animation')
@@ -47,7 +47,7 @@ class TechnologyBubbleWidget extends StatelessWidget {
                 : (currentBubble == 'product-animation' ||
                         currentBubble == 'food-animation')
                     ? screenSize.width * 0.34
-                    : screenSize.width * 0.53,
+                    : screenSize.width * 0.5,
         heroTag: 'technology-animation',
         bubbleShape: CircleShape(),
         contentText: 'Technology',
