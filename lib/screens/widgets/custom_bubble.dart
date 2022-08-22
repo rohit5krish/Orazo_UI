@@ -30,6 +30,8 @@ class CustomBubble extends StatelessWidget {
     return AnimatedContainer(
       duration: animDuration,
       child: InkWell(
+        splashFactory: NoSplash.splashFactory,
+        highlightColor: Colors.transparent,
         onTap: () {
           animateBubbleController.changeAnimatedBubble(bubble: heroTag);
         },
